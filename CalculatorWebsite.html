@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Calculator Website</title>
+    <link href="WebsiteStylesheet.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li><a href="home">Home</a></li>
+          <li>
+            <a href="projects">Projects</a>
+            <ul class="dropdown">
+              <li><a href="calculator">Calculator</a></li>
+              <li><a href="urlshortener">URL shortener</a></li>
+            </ul>
+          </li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero-image">
+        <img src="bigben.jpg" alt="local image" />
+      </div>
+
+      <section class="welcome">
+        <h2>Welcome to my Calculator Website!</h2>
+        <p>This is a basic website using HTML, CSS, and JavaScript.</p>
+      </section>
+
+      <section class="links">
+        <h2>Useful Links</h2>
+        <ul>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Portfolio</a></li>
+        </ul>
+      </section>
+
+      <!-- Calc -->
+      <section class="calculator">
+        <h2>Simple Calculator</h2>
+        <div class="calc-container">
+          <input type="number" id="num1" placeholder="First number">
+          <select id="operator">
+            <option value="+">+</option>
+            <option value="-">−</option>
+            <option value="*">×</option>
+            <option value="/">÷</option>
+          </select>
+          <input type="number" id="num2" placeholder="Second number">
+          <button onclick="calculate()">Calculate</button>
+          <button onclick="clearCalc()">Clear</button>
+          <p class="result" id="result">Result: </p>
+        </div>
+      </section>
+    </main>
+    <script src="CalculatorScript.js"></script>
+  </body>
+</html>
